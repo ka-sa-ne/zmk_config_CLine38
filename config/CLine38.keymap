@@ -72,60 +72,60 @@ combos {
 
         default_layer {
             bindings = <
-&kp Q           &kp W     &kp E     &kp R                &kp T                                             &kp Y      &kp U         &kp I       &kp O          &kp P    
-&mt LCTRL A     &kp S     &kp D     &kp F                &kp G                                             &kp H      &kp J         &kp K       &kp L          &mt RSFT MINUS
-&mt LSFT Z      &kp X     &kp C     &kp V                &kp B                                             &kp N      &kp M         &kp COMMA   &kp DOT        &mo 3
-                &kp LGUI  &kp LALT  &lt 2 INT_MUHENKAN   &lt 1 SPACE   &mt LSFT INT_HENKAN        &kp RET  &kp BSPC                             &kp DEL
+&kp Q       &kp W       &kp E     &kp R           &kp T                                   &kp Y      &kp U   &kp I       &kp O       &kp P
+&kp A       &kp S       &kp D     &kp F           &kp G                                   &kp H      &kp J   &kp K       &kp L       &kp MINUS
+&kp Z       &kp X       &kp C     &kp V           &kp B                                   &kp N      &kp M   &kp COMMA   &kp DOT     &lt 3 LS(SLASH)
+            &kp LCTRL   &kp LALT  &mt LSFT INT5   &lt 1 SPACE   &lt 4 INT4     &kp BSPC   &lt 2 RET                      &kp RGUI
             >;
         };
 
         
         layer_1 {
             bindings = <
-&kp CARET      &kp NUMBER_7   &kp NUMBER_8   &kp NUMBER_9   &kp AT_SIGN                              &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES      &kp SEMI    &kp EXCLAMATION
-&kp PLUS       &kp NUMBER_4   &kp NUMBER_5   &kp NUMBER_6   &kp HASH                                 &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp SINGLE_QUOTE       &kp COLON   &kp QMARK
-&kp ASTERISK   &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3   &kp UNDERSCORE                           &kp SLASH               &kp BACKSLASH          &kp AMPERSAND          &kp PIPE    &kp PERCENT
-               &kp NUMBER_0   &kp DOT        &kp COMMA      &trans          &trans          &kp RET  &kp BSPC                                                              &kp DOLLAR
+&kp ESC     &kp KP_MINUS   &kp UP    &kp KP_PLUS     &kp LC(C)                             &kp LC(Z)    &kp LG(LEFT)   &kp LG(LS(UP))   &kp LG(RIGHT)   &kp LG(LS(S))
+&kp TAB     &kp LEFT       &kp DOWN  &kp RIGHT       &kp LC(V)                             &kp LC(Y)    &mkp LCLK      &mkp MCLK        &mkp RCLK       &kp LA(PRINTSCREEN)
+&kp DEL     &none          &none     &kp RBKT        &kp LC(X)                             &kp LC(A)    &none          &none            &none           &trans
+            &kp LCTRL      &kp LALT  &mt LSFT INT5   &kp SPACE   &lt 4 INT4      &kp DEL   &mt RSFT RET                                 &kp RGUI
             >;
         };
 
 
         MOUSE {
             bindings = <
-&trans   &kp F7   &kp F8   &kp F9   &kp F10                         &kp LC(Y)   &kp LC(C)        &kp LC(V)        &kp LC(X)         &kp LC(P)
-&trans   &kp F4   &kp F5   &kp F6   &kp F11                         &kp LC(Z)   &mkp MB1         &kp UP_ARROW     &mkp MB2          &kp LC(F)
-&trans   &kp F1   &kp F2   &kp F3   &kp F12                         &kp LC(A)   &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW   &kp HOME
-         &trans   &trans   &trans   &trans    &trans      &kp RET   &kp BSPC                                      &kp ESC
+&kp LS(SINGLE_QUOTE)   &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3   &kp NUMBER_0                 &kp SEMI           &kp SINGLE_QUOTE   &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))   &kp LG(E)
+&kp LS(SEMI)           &kp NUMBER_4   &kp NUMBER_5   &kp NUMBER_6   &kp DOT                      &kp LS(NUMBER_6)   &kp LS(NUMBER_2)   &kp LBKT          &kp LS(INT1)        &kp LG(T)
+&kp MINUS              &kp NUMBER_7   &kp NUMBER_8   &kp NUMBER_9   &kp SLASH                    &kp LS(NUMBER_4)   &kp LS(NUMBER_7)   &kp LS(NUMBER_8)  &kp LS(NUMBER_9)    &trans
+                       &kp LCTRL      &kp LALT       &mt LSFT DEL   &kp RET           &kp BSPC   &none                                                   &kp RGUI
             >;
         };
 
 
         SCROLL {
             bindings = <
-&bt BT_CLR       &trans         &trans         &trans         &trans                                &trans   &trans   &trans   &trans   &trans
+&bt BT_CLR       &trans         &trans         &trans         &trans                                &trans   &trans   &trans   &trans   &to 5
 &bt BT_CLR_ALL   &bt BT_SEL 4   &trans         &trans         &trans                                &trans   &trans   &trans   &trans   &trans
 &trans           &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &trans                                &trans   &trans   &trans   &trans   &trans
-                 &bt BT_SEL 0   &trans         &trans         &trans   &trans      &studio_unlock   &trans                     &trans 
+                 &bt BT_SEL 0   &trans         &trans         &trans   &trans      &studio_unlock   &trans                     &trans     
             >;
         };
 
 
         layer_4 {
             bindings = <
-&trans   &trans         &trans         &trans         &trans                        &trans   &trans   &trans   &trans   &trans
-&trans   &bt BT_SEL 4   &trans         &trans         &trans                        &trans   &trans   &trans   &trans   &trans
-&trans   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &trans                        &trans   &trans   &trans   &trans   &trans
-         &bt BT_SEL 0   &trans         &trans         &trans   &trans      &trans   &trans                     &trans
+&kp ESC  &kp F1     &kp F2     &kp F3     &kp F10                         &kp LG(I)          &kp LG(X)          &kp LS(LC(ESC))    &kp LA(TAB)   &kp LG(TAB)
+&kp TAB  &kp F4     &kp F5     &kp F6     &kp F11                         &kp LS(NUMBER_1)   &kp LS(NUMBER_3)   &kp LS(NUMBER_5)   &kp INT3      &kp LS(SLASH)
+&kp DEL  &kp F7     &kp F8     &kp F9     &kp F12                         &kp EQUAL          &kp LS(EQUAL)      &kp LS(RBKT)       &kp LS(HASH)  &trans
+         &kp LCTRL  &kp LALT   &kp LSFT   &kp SPACE   &none    &kp RSFT   &kp RET                                                  &kp RGUI
             >;
         };
 
 
         layer_5 {
             bindings = <
-&trans   &trans   &trans   &trans   &trans                        &trans   &trans   &trans   &trans   &trans
-&trans   &trans   &trans   &trans   &trans                        &trans   &trans   &trans   &trans   &trans
-&trans   &trans   &trans   &trans   &trans                        &trans   &trans   &trans   &trans   &trans
-         &trans   &trans   &trans   &trans   &trans      &trans   &trans                     &trans      
+&kp ESC   &kp Q    &kp W    &kp E      &kp R                                 &trans   &trans      &trans      &trans      &to 0
+&kp TAB   &kp A    &kp S    &kp D      &kp F                                 &trans   &mkp LCLK   &mkp MCLK   &mkp RCLK   &trans
+&kp DEL   &kp Z    &kp X    &kp C      &kp V                                 &trans   &trans      &trans      &trans      &trans
+          &trans   &trans   &kp LSFT   &kp SPACE   &kp LCTRL      &kp BSPC   &kp RET                          &trans       
             >;
         };
 
